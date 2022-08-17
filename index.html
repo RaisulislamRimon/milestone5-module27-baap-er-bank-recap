@@ -19,29 +19,76 @@
     <!-- main starts  -->
     <main>
       <!-- main top starts  -->
+      <!-- balance and transaction summary starts -->
       <section class="mt-8">
         <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+          <!-- Deposit -->
           <div class="bg-yellow-400 p-8 rounded-lg">
             <h4 class="text-3xl text-white">Deposit</h4>
             <h2 class="text-5xl font-medium text-white">
               $<span id="deposit-total">00</span>
             </h2>
           </div>
+          <!-- Withdraw -->
           <div class="bg-red-400 p-8 rounded-lg">
             <h4 class="text-3xl text-white">Withdraw</h4>
             <h2 class="text-5xl font-medium text-white">
               $<span id="withdraw-total">00</span>
             </h2>
           </div>
+          <!-- Balance -->
           <div class="bg-blue-400 p-8 rounded-lg">
-            <h4 class="text-3xl text-white">Total</h4>
+            <h4 class="text-3xl text-white">Balance</h4>
             <h2 class="text-5xl font-medium text-white">
               $<span id="balance-total">1240</span>
             </h2>
           </div>
         </div>
       </section>
+      <!-- balance and transaction summary ends -->
       <!-- main top ends -->
+      <!-- main bottom starts -->
+      <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <!-- deposit input area starts  -->
+          <div class="bg-violet-400 p-9 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="w-3/4 px-4 py-3 rounded block"
+              placeholder="$ Amount you want to deposit"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-blue-800 hover:bg-sky-600 px-6 py-2 text-white font-medium rounded-lg gap-2 mt-4"
+            >
+              Deposit
+            </button>
+          </div>
+          <!-- deposit input area ends -->
+          <!-- withdraw input area starts  -->
+          <div class="bg-amber-400 p-9 rounded-lg">
+            <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="w-3/4 px-4 py-3 rounded block"
+              placeholder="$ Amount you want to withdraw"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-blue-800 hover:bg-sky-600 px-6 py-2 text-white font-medium rounded-lg gap-2 mt-4"
+            >
+              Withdraw
+            </button>
+          </div>
+          <!-- withdraw input area ends -->
+        </div>
+      </section>
+      <!-- main bottom ends  -->
     </main>
     <!-- main ends  -->
   </body>
